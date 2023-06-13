@@ -1,0 +1,87 @@
+:root {
+    --purple: rgb(183, 153, 255);
+    --purpleBlue: rgb(172, 188, 255);
+    --blue: rgb(174, 226, 255);
+    --white: rgb(230, 255, 253);
+}
+
+body {
+    animation: background-pan 5s linear infinite;
+    background: linear-Gradient(
+        /* 0.35turn, */
+        to right,
+        var(--blue),
+        var(--purpleBlue),
+        var(--purpleBlue),
+        var(--blue)
+    );
+    background-size: 200%;
+
+
+    color: black;
+    font-family: "Rubik", sans-serif;
+}
+
+.specialText {
+    color: var(--purple);
+}
+
+.container0 {
+    height: 800px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container0-Heading {
+    
+    height: max-content;
+    width: 700px;
+}
+
+.container0-Heading h1 {
+    font-size: 140px;
+}
+
+.container0-Heading p {
+    font-size: 25px;
+}
+
+.container0-Image {
+    
+    height: 600px;
+    width: 400px;
+
+    border: 3px solid;
+    border-radius: 10px;
+    border-color: var(--purple);
+}
+
+.container0-Image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.container0-Text {
+    
+    height: max-content;
+    width: 450px;
+}
+
+.container0-Text-underline {
+    width: 100%;
+    border: 1px solid;
+}
+
+@keyframes background-pan {
+    from {
+        background-position: 0% center;
+    }
+    to {
+        background-position: -200% center;
+    }
+}
