@@ -8,7 +8,6 @@
 body {
     animation: background-pan 5s linear infinite;
     background: linear-Gradient(
-        /* 0.35turn, */
         to right,
         var(--blue),
         var(--purpleBlue),
@@ -18,7 +17,7 @@ body {
     background-size: 200%;
 
 
-    color: black;
+    color: var(--white);
     font-family: "Rubik", sans-serif;
 }
 
