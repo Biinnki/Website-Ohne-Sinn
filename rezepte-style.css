@@ -1,0 +1,36 @@
+:root {
+    --purple: rgb(183, 153, 255);
+    --purpleBlue: rgb(172, 188, 255);
+    --blue: rgb(174, 226, 255);
+    --white: rgb(230, 255, 253);
+}
+
+body {
+    animation: background-pan 5s linear infinite;
+    background: linear-Gradient(
+        to right,
+        var(--blue),
+        var(--purpleBlue),
+        var(--purpleBlue),
+        var(--blue)
+    );
+    background-size: 200%;
+
+
+    color: var(--white);
+    font-family: "Rubik", sans-serif;
+}
+
+.specialText {
+    color: var(--purple);
+}
+
+
+@keyframes background-pan {
+    from {
+        background-position: 0% center;
+    }
+    to {
+        background-position: -200% center;
+    }
+}

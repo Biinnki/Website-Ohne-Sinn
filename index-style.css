@@ -32,6 +32,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+	gap: 15px;
 }
 
 .container0-Heading {
@@ -66,9 +67,10 @@ body {
 }
 
 .container0-Text {
-    
     height: max-content;
     width: 450px;
+	margin-right: 50px;
+	margin-left: 50px;
 }
 
 .container0-Text-underline {
@@ -91,7 +93,10 @@ body {
 }
 
 .container1-links {
-    
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+    margin-bottom: 20px;
 }
 
 .container1-rezepte {
