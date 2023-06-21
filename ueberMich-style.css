@@ -1,0 +1,60 @@
+:root {
+    --purple: rgb(183, 153, 255);
+    --purpleBlue: rgb(172, 188, 255);
+    --blue: rgb(174, 226, 255);
+    --white: rgb(230, 255, 253);
+}
+
+body {
+    animation: background-pan 5s linear infinite;
+    background: linear-Gradient(
+        to right,
+        var(--blue),
+        var(--purpleBlue),
+        var(--purpleBlue),
+        var(--blue)
+    );
+    background-size: 200%;
+
+
+    color: var(--white);
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 650px;
+    height: 700px;
+
+    border: 2px solid;
+    border-radius: 15px;
+    border-color: var(--white);
+}
+
+.specialText {
+    color: var(--purple);
+}
+
+
+@keyframes background-pan {
+    from {
+        background-position: 0% center;
+    }
+    to {
+        background-position: -200% center;
+    }
+}
